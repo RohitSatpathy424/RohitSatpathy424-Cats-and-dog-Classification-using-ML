@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="../static/style1.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat vs Dog Classifier</title>
+</head>
+<body>
+  <h1>Cat vs Dog Classifier</h1>
+  <form action="/classify" method="POST" enctype="multipart/form-data">
+    <label for="image">Upload Image:</label>
+    <input type="file" name="image" required>
+    <label for="model">Select Model:</label>
+    <select name="model">
+      <option value="svm">SVM</option>
+      <option value="rf">Random Forest</option>
+      <option value="cnn">CNN</option>
+    </select>
+    <button type="submit">Classify</button>
+  </form>
+</body>
+</html>
